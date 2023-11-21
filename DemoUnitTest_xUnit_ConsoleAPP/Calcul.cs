@@ -34,7 +34,15 @@ namespace DemoUnitTest_xUnit_ConsoleAPP
 
         public double Division(int a, int b)
         {
-            throw new NotImplementedException();
+            if(b == 0)
+                throw new DivideByZeroException();
+            double result = (double)a / b;
+            return result;
+        }
+
+        public bool EstPair(int nb)
+        {
+            return nb % 2 == 0;
         }
     }
 }

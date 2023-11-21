@@ -1,6 +1,1 @@
-﻿checked
-{
-
-Console.WriteLine(long.MaxValue);
-
-}
+﻿double x = (double)int.MaxValue + 1;
